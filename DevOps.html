@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f4f8;
+    }
+    h1 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .stage {
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      flex-direction: column;
+      position: relative;
+    }
+    .stage::after {
+      content: '→';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #000;
+    }
+    .stage:last-child::after {
+      content: '';
+    }
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .explanation {
+      margin: 10px 0;
+      font-size: 14px;
+      max-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <div class="diagram">
+    <div class="stage">
+      <div>Plan</div>
+    </div>
+    <div class="stage">
+      <div>Develop</div>
+    </div>
+    <div class="stage">
+      <div>Build</div>
+    </div>
+    <div class="stage">
+      <div>Test</div>
+    </div>
+    <div class="stage">
+      <div>Release</div>
+    </div>
+    <div class="stage">
+      <div>Deploy</div>
+    </div>
+    <div class="stage">
+      <div>Operate</div>
+    </div>
+    <div class="stage">
+      <div>Monitor</div>
+    </div>
+  </div>
+
+  <h2>Stage Descriptions</h2>
+  <div>
+    <p><strong>Plan:</strong> Define project goals, requirements, and tasks.</p>
+    <p><strong>Develop:</strong> Code the application with collaboration tools.</p>
+    <p><strong>Build:</strong> Compile code and manage dependencies.</p>
+    <p><strong>Test:</strong> Run automated/manual tests to find bugs.</p>
+    <p><strong>Release:</strong> Prepare and approve code for deployment.</p>
+    <p><strong>Deploy:</strong> Move code to production environments.</p>
+    <p><strong>Operate:</strong> Manage infrastructure and application health.</p>
+    <p><strong>Monitor:</strong> Track performance, usage, and issues.</p>
+  </div>
+</body>
+</html>
